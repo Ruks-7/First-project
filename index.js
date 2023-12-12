@@ -17,7 +17,7 @@ let day=now.getDay();
 let days=['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
 day=days[now.getDay()];
 
-let hour=now.getHours();
+let hour=now.getHours().toString().padStart(2, "0");
 let minutes=now.getMinutes().toString().padStart(2, "0"); 
 
 let details=document.querySelector("#details");
